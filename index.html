@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Builder</title>
+    <link href = "css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "css/bootstrap-theme.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "css/styles.css" rel = "stylesheet" type = "text/css">
+    <script src = "js/jquery-3.1.1.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+    <script src = "js/scripts.js"></script>
+  </head>
+  <body>
+    <div class = "container">
+      <h1>Build Your Pizza</h1>
+      <form id = "userChoices">
+        <div class = "row">
+          <div class = "col-md-3">
+            <label for = "size">Size:</label>
+            <select class = "form-control" id="selectSize">
+              <option value = "6">Small - 12 Inches</option>
+              <option value = "8">Medium - 14 Inches</option>
+              <option value = "12">Large - 16 Inches</option>
+              <option value = "14">Extra Large - 18 Inches</option>
+              <option value = "17">Giant - 21 Inches</option>
+            </select>
+            <br>
+            <label for = "sauce">Sauce:</label>
+            <select class = "form-control" id="selectSauce">
+              <option value = "1">Classic Tomato Sauce</option>
+              <option value = "2">White Garlic Sauce</option>
+              <option value = "3">Pesto</option>
+              <option value = "4">Herbed Olive Oil</option>
+              <option value = "5">Sun-Dried Tomatoes and Olive Oil</option>
+            </select>
+          </div>
+          <div class = "col-md-3">
+            <label for = "meats">Meats:</label><br>
+            <input type="checkbox" name="toppings" value="pepperoni"><span class = listing>Pepperoni</span><br>
+            <input type="checkbox" name="toppings" value="sausage"><span class = listing>Sausage</span><br>
+            <input type="checkbox" name="toppings" value="c-bac"><span class = listing>Canadian Bacon</span><br>
+            <input type="checkbox" name="toppings" value="bacon"><span class = listing>Bacon</span><br>
+            <input type="checkbox" name="toppings" value="pancetta"><span class = listing>Pancetta</span><br>
+            <input type="checkbox" name="toppings" value="anchovy"><span class = listing>Anchovies</span><br>
+            <input type="checkbox" name="toppings" value="hChicken"><span class = listing>Herbed Chicken Breast</span><br>
+            <input type="checkbox" name="toppings" value="sChicken"><span class = listing>Spicy Chicken Breast</span><br>
+          </div>
+
+          <div class = "col-md-3">
+            <label for = "veggies">Vegetables:</label><br>
+            <input type="checkbox" name="toppings" value="onion"><span class = listing>Red Onions</span><br>
+            <input type="checkbox" name="toppings" value="bOlive"><span class = listing>Black Olives</span><br>
+            <input type="checkbox" name="toppings" value="gOlive"><span class = listing>Green Olives</span><br>
+            <input type="checkbox" name="toppings" value="kOlive"><span class = listing>Kalamata Olives</span><br>
+            <input type="checkbox" name="toppings" value="broccoli"><span class = listing>Broccoli</span><br>
+            <input type="checkbox" name="toppings" value="zuchini"><span class = listing>Zuchini</span><br>
+            <input type="checkbox" name="toppings" value="artichoke"><span class = listing>Artichoke Hearts</span><br>
+            <input type="checkbox" name="toppings" value="spinach"><span class = listing>Spinach</span><br>
+          </div>
+
+          <div class = "col-md-3">
+            <label for = "Cheese">Cheeses:</label><br>
+            <input type="checkbox" name="toppings" value="extraMoz"><span class = listing>Extra Mozzarella</span><br>
+            <input type="checkbox" name="toppings" value="cheddar"><span class = listing>Cheddar</span><br>
+            <input type="checkbox" name="toppings" value="gouda"><span class = listing>Gouda</span><br>
+            <input type="checkbox" name="toppings" value="feta"><span class = listing>Feta</span><br>
+          </div>
+        </div>
+
+        <br>
+
+        <button type="submit" class = "btn btn-lg btn-gray" name="order-btn">Order Your Pizza</button>
+      </form>
+    </div>
+  </body>
+</html>
