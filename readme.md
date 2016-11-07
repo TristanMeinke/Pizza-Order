@@ -16,4 +16,4 @@ The basic behaviors of this site include the following:
   3. Prints data to a receipt after submission.
 
 ## Live Site:
-The live version of this site is hosted at the following URL:  
+The live version of this site is hosted at the following URL: https://tristanmeinke.github.io/Pizza-Order
