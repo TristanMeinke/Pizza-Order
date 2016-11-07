@@ -3,6 +3,20 @@
   margin-left: 6px;
 }
 
+#receipt {
+  border: solid #000 2px;
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
+}
+
 /* IMPORTED STYLESHEET */
 
 .btn {

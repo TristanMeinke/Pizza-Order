@@ -71,5 +71,19 @@ $(document).ready(function() {
     sauce = getPizzaSauce();
     orderPrice = evaluateCost(checkboxInput);
     pizzaOrder = new Pizza(size, sauce, pizzaToppings, orderPrice);
+
+    $("li#size").append("Size: " + size);
+    $("li#sauce").append("Sauce: " + sauce);
+
+    // $("ul#toppingList").append("Toppings: ");
+    for (var i = 0; i < pizzaToppings.length; i++)
+    {
+      $("ul#toppingList").append("<li>" + pizzaToppings[i] + "</li>");
+    }
+
+    $("h3#price").append("Price: $" + orderPrice +".00");
+
+    $("form#userChoices").hide();
+    $("#receipt").show();
   });
 });
