@@ -4,8 +4,16 @@
 }
 
 #receipt {
-  border: solid #000 2px;
   display: none;
+}
+
+#orderForm {
+  border: solid #000 2px;
+  padding: 12px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {
@@ -17,6 +25,9 @@ h3 {
   text-align: center;
 }
 
+body {
+  background-color: #AAD8FA;
+}
 /* IMPORTED STYLESHEET */
 
 .btn {
@@ -55,25 +66,28 @@ h3 {
 }
 
 .jumbotron {
-  background-color: #A9A9A9;
-  color: #000;
-
-  /*text-align: center;*/
+  /*background-color: #A9A9A9;*/
+  /*color: #000;*/
 
   margin: 10px;
-  margin-bottom: 24px;
+  margin-top: 24px;
   padding: 30px;
 
   box-shadow: 4px 6px 18px 0px #000;
-  outline: solid #444 1px;
+  outline: solid #aaa 1px;
   border-radius: 0px;
   border: solid 21px #818182;
 
-  /* The following block adds a gradient to the borders */
-  -moz-border-image: -moz-linear-gradient(top left, #A9A8A8 0%, #323232 100%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #A9A8A8 0%, #323232 100%);
-  border-image: linear-gradient(to bottom right, #A9A8A8 0%, #323232 100%);
+  -moz-border-image: -moz-linear-gradient(top left, #FFFFFF 0%, #bbb 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #bbb 100%);
+  border-image: linear-gradient(to bottom right, #FFFFFF 0%, #bbb 100%);
   border-image-slice: 1;
+
+  /* The following block adds a gradient to the borders*/
+  -moz-background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #bbb 100%);
+  -webkit-backgrond-image: -webkit-linear-gradient(top left,#FFFFFF 0%, #bbb 100%);
+  background-image: linear-gradient(to bottom right, #FFFFFF 0%, #bbb 100%);
+  background-image-slice: 1;
 
 }
 .jumbotron > h1 {

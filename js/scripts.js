@@ -28,7 +28,7 @@ function Pizza(size, sauce, toppings, price){
   this.price = price;
 }
 
-function evaluateCost(checkboxInput) {
+Pizza.prototype.evaluateCost = function(checkboxInput) {
   costBySize = document.getElementById("selectSize");
   valueOfSize = parseInt(costBySize.options[costBySize.selectedIndex].value);
   costInToppings = toppingSelections.length * 2;
@@ -69,8 +69,8 @@ $(document).ready(function() {
     pizzaToppings = customerSelections(checkboxInput);
     size = getPizzaSize();
     sauce = getPizzaSauce();
-    orderPrice = evaluateCost(checkboxInput);
     pizzaOrder = new Pizza(size, sauce, pizzaToppings, orderPrice);
+    orderPrice = pizzaOrder.evaluateCost(checkboxInput);
 
     $("li#size").append("Size: " + size);
     $("li#sauce").append("Sauce: " + sauce);
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
     $("h3#price").append("Price: $" + orderPrice +".00");
 
-    $("form#userChoices").hide();
+    $("#frontPage").hide();
     $("#receipt").show();
   });
 });
